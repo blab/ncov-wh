@@ -17,9 +17,20 @@ builds:
   # with a build name that will produce the following URL fragment on Nextstrain/auspice:
   # /ncov/wh
   wh:
-    subsampling_scheme: region
+    subsampling_scheme: wh
     region: North America
-    max_sequences: 100
+
+subsampling:
+
+  wh:
+    region:
+      group_by: "division year month"
+      max_sequences: 1000
+      exclude: "--exclude-where 'region!={region}'"
+    global:
+      group_by: "region year month"
+      max_sequences: 200
+      exclude: "--exclude-where 'region={region}'"
 
 
 # Here, you can specify what type of auspice_config you want to use
