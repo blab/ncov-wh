@@ -15,14 +15,21 @@ builds:
 
   # This build focuses on all of North America
   # with a build name that will produce the following URL fragment on Nextstrain/auspice:
-  # /ncov/wh
-  wh:
-    subsampling_scheme: wh
+  # /ncov/wh/background
+  wh_background:
+    subsampling_scheme: wh_background
+    region: North America
+
+  # This build focuses on all Pangolin lineage B.1.26 viruses
+  # with a build name that will produce the following URL fragment on Nextstrain/auspice:
+  # /ncov/wh/clade
+  wh_clade:
+    subsampling_scheme: wh_clade
     region: North America
 
 subsampling:
 
-  wh:
+  wh_background:
     region:
       group_by: "division year month"
       max_sequences: 1000
@@ -31,6 +38,16 @@ subsampling:
       group_by: "region year month"
       max_sequences: 200
       exclude: "--exclude-where 'region={region}'"
+
+  wh_clade:
+    region:
+      group_by: "division year month"
+      max_sequences: 1000
+      exclude: "--exclude-where 'pangolin_lineage!=B.1.26' 'region!={region}'"
+    global:
+      group_by: "region year month"
+      max_sequences: 200
+      exclude: "--exclude-where 'pangolin_lineage!=B.1.26' 'region={region}'"
 
 
 # Here, you can specify what type of auspice_config you want to use
