@@ -19,8 +19,8 @@ if __name__ == "__main__":
     ref = [a for a in aln if a.id=='Wuhan/Hu-1/2019'][0]
 
     ref_expected = ['C', 'C']
-    positions = [20402, 1059]
-    wt_expected = ['T', 'T']
+    positions = [20402, 28821]
+    wt_expected = ['T', 'A']
 
     for i in range(0, len(positions)):
         assert(ref[positions[i]-1]==ref_expected[i])
