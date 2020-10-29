@@ -895,6 +895,7 @@ USA/MA-JL-D130/2020
 
 # excess unique divergence
 USA/ID-OHSU-1977/2020
+USA/WA-UW-22751/2020
 
 # not actually B.1.26
 NewZealand/20VR2092/2020
