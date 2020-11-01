@@ -4,8 +4,7 @@ benchmarks/
 logs/
 results/
 build/
-auspice/
-data/*
+data/
 defaults/colors.tsv
 defaults/colors_*.tsv
 stats.json
