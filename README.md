@@ -1,4 +1,17 @@
-# Viral sequencing places White House COVID-19 outbreak into genomic context
+# Viral genome sequencing places White House COVID-19 outbreak into phylogenetic context
+
+Trevor Bedford<sup>1,2,3</sup>, Jennifer K. Logue<sup>4</sup>, Peter D. Han<sup>2,3</sup>, Caitlin R. Wolf<sup>4</sup>, Chris D. Frazar<sup>3</sup>, Benjamin Pelle><sup>3</sup>, Erica Ryke<sup>3</sup>, Jover Lee<sup>1</sup>, Mark J. Rieder<sup>2,3</sup>, Deborah A. Nickerson<sup>2,3</sup>, Christina M. Lockwood<sup>5</sup>, Lea M. Starita<sup>2,3</sup>, Helen Y. Chu<sup>2,4</sup>, Jay Shendure<sup>2,3,6</sup>
+
+<sup>1</sup>Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Research Center, Seattle, WA, USA
+<sup>2</sup>Brotman Baty Institute for Precision Medicine, Seattle, WA, USA
+<sup>3</sup>Department of Genome Sciences, University of Washington, Seattle, WA, USA
+<sup>4</sup>Department of Medicine, Division of Allergy and Infectious Diseases, University of Washington, Seattle, WA, USA
+<sup>5</sup>Department of Laboratory Medicine and Pathology, University of Washington, Seattle, WA, USA
+<sup>6</sup>Howard Hughes Medical Institute, Seattle, WA, USA
+
+## Abstract
+
+In October 2020, an outbreak of at least 50 COVID-19 cases was reported surrounding individuals employed at or visiting the White House. Here, we applied genomic epidemiology to investigate the origins of this outbreak. We enrolled two individuals with exposures linked to the White House COVID-19 outbreak into an IRB-approved research study and sequenced their SARS-CoV-2 infections. We find these viral sequences are highly genetically similar to each other, but are distinct from over 160,000 publicly available SARS-CoV-2 genomes, possessing 5 nucleotide mutations that differentiate this lineage from all other circulating lineages sequenced to date. We estimate this lineage has a common ancestor in the USA in April or May 2020, but its whereabouts for the previous 5 to 6 months are not clear. Looking forwards, sequencing of additional community SARS-CoV-2 infections collected in the USA prior to October 2020 may reveal linked infections and shed light on its geographic ancestry. In sequencing of SARS-CoV-2 infections collected after October 2020, the relative rarity of this constellation of mutations may make it possible to identify infections that likely descend from the White House COVID-19 outbreak.
 
 ## Repo organization
 
