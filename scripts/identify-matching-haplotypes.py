@@ -35,5 +35,4 @@ if __name__ == "__main__":
             newwave_records.append(seq)
             print(seq.name)
 
-    # for record in newwave_records:
-    #     print(record)
+    print(len(newwave_records), "total matches")
