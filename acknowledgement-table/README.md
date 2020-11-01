@@ -1,0 +1,1 @@
+We gratefully acknowledge the authors, originating and submitting laboratories of the sequences from GISAID’s EpiFlu Database on which this research is based. Strain names, GISAID EpiCoV accession numbers, originating and submitting laboratories for sequences used are listed in `acknowledgement_table.tsv`.
