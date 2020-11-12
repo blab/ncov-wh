@@ -181,12 +181,8 @@
             "#5EA9A1"
           ],
           [
-            "One week ago",
-            "#8ABB6A"
-          ],
-          [
-            "1-2 days ago",
-            "#E29E39"
+            "3-7 days ago",
+            "#BEBB48"
           ]
         ],
         "title": "Submission Date",
@@ -208,6 +204,11 @@
         "type": "categorical"
       },
       {
+        "key": "subclade_membership",
+        "title": "subclade_membership",
+        "type": "categorical"
+      },
+      {
         "key": "recency",
         "scale": [
           [
@@ -219,20 +220,11 @@
             "#5EA9A1"
           ],
           [
-            "One week ago",
-            "#8ABB6A"
-          ],
-          [
-            "1-2 days ago",
-            "#E29E39"
+            "3-7 days ago",
+            "#BEBB48"
           ]
         ],
         "title": "Submission Date",
-        "type": "categorical"
-      },
-      {
-        "key": "subclade_membership",
-        "title": "subclade_membership",
         "type": "categorical"
       }
     ],
@@ -514,7 +506,7 @@
       "entropy"
     ],
     "title": "Genomic epidemiology of SARS-CoV-2",
-    "updated": "2020-10-31"
+    "updated": "2020-11-03"
   },
   "tree": {
     "branch_attrs": {
@@ -544,9 +536,9 @@
           },
           "country": {
             "confidence": {
-              "Asia": 0.9999999999999999
+              "Asia": 1.0
             },
-            "entropy": -9.99866855976916e-13,
+            "entropy": -1.000088900581841e-12,
             "value": "Asia"
           },
           "div": 0,
@@ -631,9 +623,9 @@
           },
           "country": {
             "confidence": {
-              "Asia": 0.9999999999999999
+              "Asia": 1.0
             },
-            "entropy": -9.99866855976916e-13,
+            "entropy": -1.000088900581841e-12,
             "value": "Asia"
           },
           "div": 2,
@@ -724,9 +716,9 @@
               },
               "country": {
                 "confidence": {
-                  "Asia": 0.9999999999999999
+                  "Asia": 1.0
                 },
-                "entropy": -9.99866855976916e-13,
+                "entropy": -1.000088900581841e-12,
                 "value": "Asia"
               },
               "div": 3,
@@ -1043,9 +1035,9 @@
                                   },
                                   "country": {
                                     "confidence": {
-                                      "Europe": 0.9999999999999999
+                                      "Europe": 1.0
                                     },
-                                    "entropy": -9.99866855976916e-13,
+                                    "entropy": -1.000088900581841e-12,
                                     "value": "Europe"
                                   },
                                   "div": 4,
@@ -1113,9 +1105,9 @@
                                   },
                                   "country": {
                                     "confidence": {
-                                      "Europe": 0.9999999999999999
+                                      "Europe": 1.0
                                     },
-                                    "entropy": -9.99866855976916e-13,
+                                    "entropy": -1.000088900581841e-12,
                                     "value": "Europe"
                                   },
                                   "div": 4,
@@ -1174,7 +1166,7 @@
                               "div": 4,
                               "num_date": {
                                 "confidence": [
-                                  2020.1775911937004,
+                                  2020.1770067503103,
                                   2020.1953551912568
                                 ],
                                 "value": 2020.1919840762646
@@ -1184,9 +1176,9 @@
                               },
                               "country": {
                                 "confidence": {
-                                  "Europe": 0.9987444418478871
+                                  "Europe": 0.9988054717527434
                                 },
-                                "entropy": 0.011093261524352638,
+                                "entropy": 0.010621734969262402,
                                 "value": "Europe"
                               }
                             }
@@ -1200,7 +1192,7 @@
                           "div": 4,
                           "num_date": {
                             "confidence": [
-                              2020.1583255754845,
+                              2020.1627804810305,
                               2020.181693989071
                             ],
                             "value": 2020.1705267107425
@@ -1210,9 +1202,9 @@
                           },
                           "country": {
                             "confidence": {
-                              "Europe": 0.9985656479996026
+                              "Europe": 0.998637629258012
                             },
-                            "entropy": 0.012478572757264668,
+                            "entropy": 0.01193091926666772,
                             "value": "Europe"
                           }
                         }
@@ -1226,20 +1218,20 @@
                       "div": 4,
                       "num_date": {
                         "confidence": [
-                          2020.1570852117657,
+                          2020.1571000297085,
                           2020.1707650273224
                         ],
-                        "value": 2020.1705822214801
+                        "value": 2020.1703807748504
                       },
                       "subclade_membership": {
                         "value": "20A"
                       },
                       "country": {
                         "confidence": {
-                          "Asia": 0.001166490690693492,
-                          "Europe": 0.9974906255732949
+                          "Asia": 0.0011220932705943603,
+                          "Europe": 0.9976084386224995
                         },
-                        "entropy": 0.020296884454376135,
+                        "entropy": 0.019462626499922465,
                         "value": "Europe"
                       }
                     }
@@ -1253,21 +1245,21 @@
                   "div": 4,
                   "num_date": {
                     "confidence": [
-                      2020.131628785193,
+                      2020.1315523697058,
                       2020.1598360655737
                     ],
-                    "value": 2020.1566488738763
+                    "value": 2020.1566969605979
                   },
                   "subclade_membership": {
                     "value": "20A"
                   },
                   "country": {
                     "confidence": {
-                      "Asia": 0.010518354624411015,
-                      "Europe": 0.9838682779853924,
-                      "USA": 0.004181223932089103
+                      "Asia": 0.010254491556518317,
+                      "Europe": 0.9843516297969064,
+                      "USA": 0.004008617218978285
                     },
-                    "entropy": 0.09716029493219741,
+                    "entropy": 0.09467334282682276,
                     "value": "Europe"
                   }
                 }
@@ -1441,7 +1433,7 @@
                       "div": 5,
                       "num_date": {
                         "confidence": [
-                          2020.1498719004971,
+                          2020.1500290735396,
                           2020.1598360655737
                         ],
                         "value": 2020.1589118008974
@@ -1451,12 +1443,12 @@
                       },
                       "country": {
                         "confidence": {
-                          "Asia": 0.0039065556336916035,
-                          "Europe": 0.9859550667759991,
-                          "Oceania": 0.0011931551933785794,
-                          "USA": 0.008302773422011791
+                          "Asia": 0.0037983787060131232,
+                          "Europe": 0.9863416643185268,
+                          "Oceania": 0.0011482635230386721,
+                          "USA": 0.00809223253980681
                         },
-                        "entropy": 0.08814149442783464,
+                        "entropy": 0.08606168303174153,
                         "value": "Europe"
                       }
                     }
@@ -1714,7 +1706,7 @@
                                   "div": 6,
                                   "num_date": {
                                     "confidence": [
-                                      2020.2106195386498,
+                                      2020.211077450892,
                                       2020.2281420765028
                                     ],
                                     "value": 2020.2281420765028
@@ -1724,12 +1716,12 @@
                                   },
                                   "country": {
                                     "confidence": {
-                                      "Canada": 0.0012378126038911448,
-                                      "Europe": 0.0015485259344169774,
-                                      "Oceania": 0.010857600696798623,
-                                      "USA": 0.9858258701569318
+                                      "Canada": 0.0011306127905022403,
+                                      "Europe": 0.0014080624719847975,
+                                      "Oceania": 0.009364047685754613,
+                                      "USA": 0.9876141122444769
                                     },
-                                    "entropy": 0.08548586129401375,
+                                    "entropy": 0.07665211610997856,
                                     "value": "USA"
                                   }
                                 }
@@ -1876,7 +1868,7 @@
                                             "value": "B.1"
                                           },
                                           "recency": {
-                                            "value": "One month ago"
+                                            "value": "Older"
                                           },
                                           "region": {
                                             "value": "North America"
@@ -1972,7 +1964,7 @@
                                       "div": 6,
                                       "num_date": {
                                         "confidence": [
-                                          2020.2341838266661,
+                                          2020.2347594562978,
                                           2020.266393442623
                                         ],
                                         "value": 2020.2427956376773
@@ -1982,12 +1974,12 @@
                                       },
                                       "country": {
                                         "confidence": {
-                                          "Canada": 0.0011743418166969453,
-                                          "Europe": 0.001308076793198298,
-                                          "Oceania": 0.010077964949548568,
-                                          "USA": 0.9869444350758462
+                                          "Canada": 0.0010752242800892513,
+                                          "Europe": 0.0011963781319252183,
+                                          "Oceania": 0.008720420841059706,
+                                          "USA": 0.9885552051232576
                                         },
-                                        "entropy": 0.07967898382425524,
+                                        "entropy": 0.07161762928328588,
                                         "value": "USA"
                                       }
                                     }
@@ -2001,22 +1993,22 @@
                                   "div": 6,
                                   "num_date": {
                                     "confidence": [
-                                      2020.2054468316242,
+                                      2020.2061503565772,
                                       2020.2199453551912
                                     ],
-                                    "value": 2020.2195587785914
+                                    "value": 2020.2198263456962
                                   },
                                   "subclade_membership": {
                                     "value": "20C"
                                   },
                                   "country": {
                                     "confidence": {
-                                      "Canada": 0.0014143134352987761,
-                                      "Europe": 0.0017641582886078603,
-                                      "Oceania": 0.013088442002430489,
-                                      "USA": 0.98313568365704
+                                      "Canada": 0.0012871267111304807,
+                                      "Europe": 0.0015986046007961524,
+                                      "Oceania": 0.011222568550503215,
+                                      "USA": 0.9853492575952735
                                     },
-                                    "entropy": 0.0983719752515512,
+                                    "entropy": 0.0878682418379591,
                                     "value": "USA"
                                   }
                                 }
@@ -2030,8 +2022,8 @@
                               "div": 6,
                               "num_date": {
                                 "confidence": [
-                                  2020.1766736309762,
-                                  2020.214139533071
+                                  2020.1763874109668,
+                                  2020.2148029763894
                                 ],
                                 "value": 2020.2108038665797
                               },
@@ -2040,12 +2032,12 @@
                               },
                               "country": {
                                 "confidence": {
-                                  "Canada": 0.0018458470295332334,
-                                  "Europe": 0.003872090985015518,
-                                  "Oceania": 0.017318188977914005,
-                                  "USA": 0.9760997741166997
+                                  "Canada": 0.0016742615086469902,
+                                  "Europe": 0.003508531488177214,
+                                  "Oceania": 0.014825728200594275,
+                                  "USA": 0.9792105980660039
                                 },
-                                "entropy": 0.13307476241472496,
+                                "entropy": 0.11913069869993187,
                                 "value": "USA"
                               }
                             }
@@ -2059,22 +2051,22 @@
                           "div": 6,
                           "num_date": {
                             "confidence": [
-                              2020.1646664363482,
+                              2020.1649664991075,
                               2020.1762295081967
                             ],
-                            "value": 2020.1753483617051
+                            "value": 2020.1755785378573
                           },
                           "subclade_membership": {
                             "value": "20C"
                           },
                           "country": {
                             "confidence": {
-                              "Canada": 0.0027211500057090737,
-                              "Europe": 0.0168178189250641,
-                              "Oceania": 0.020282651420411774,
-                              "USA": 0.9582026290650514
+                              "Canada": 0.002504912518953314,
+                              "Europe": 0.01570349266346074,
+                              "Oceania": 0.01778929627634522,
+                              "USA": 0.9621843400671768
                             },
-                            "entropy": 0.21705473524038288,
+                            "entropy": 0.20047222240820572,
                             "value": "USA"
                           }
                         }
@@ -2335,7 +2327,7 @@
                                       "div": 8,
                                       "num_date": {
                                         "confidence": [
-                                          2020.2032317814865,
+                                          2020.2052109600781,
                                           2020.217213114754
                                         ],
                                         "value": 2020.217213114754
@@ -2345,12 +2337,12 @@
                                       },
                                       "country": {
                                         "confidence": {
-                                          "Canada": 0.0012925640131325102,
-                                          "Europe": 0.001438724031187552,
-                                          "Oceania": 0.015316994667532278,
-                                          "USA": 0.9814013076708247
+                                          "Canada": 0.0012134292093532806,
+                                          "Europe": 0.0013501205559784337,
+                                          "Oceania": 0.0155861234288863,
+                                          "USA": 0.9813284980695008
                                         },
-                                        "entropy": 0.10457395023309783,
+                                        "entropy": 0.10436819651746933,
                                         "value": "USA"
                                       }
                                     }
@@ -2369,7 +2361,7 @@
                                             "branch_attrs": {
                                               "mutations": {}
                                             },
-                                            "name": "USA/TX-HMH-1545/2020",
+                                            "name": "USA/TX-HMH-823/2020",
                                             "node_attrs": {
                                               "GISAID_clade": {
                                                 "value": "GH"
@@ -2377,703 +2369,6 @@
                                               "author": {
                                                 "author": "S. Wesley Long et al",
                                                 "value": "S. Wesley Long et al A"
-                                              },
-                                              "clade_membership": {
-                                                "value": "20C"
-                                              },
-                                              "country": {
-                                                "confidence": {
-                                                  "USA": 0.9999999999999999
-                                                },
-                                                "entropy": -9.99866855976916e-13,
-                                                "value": "USA"
-                                              },
-                                              "div": 8,
-                                              "division": {
-                                                "value": "Texas"
-                                              },
-                                              "division_exposure": {
-                                                "value": "Texas"
-                                              },
-                                              "gisaid_epi_isl": {
-                                                "value": "EPI_ISL_542785"
-                                              },
-                                              "host": {
-                                                "value": "Human"
-                                              },
-                                              "location": {
-                                                "value": "Greater Houston Area"
-                                              },
-                                              "num_date": {
-                                                "confidence": [
-                                                  2020.282786885246,
-                                                  2020.282786885246
-                                                ],
-                                                "value": 2020.282786885246
-                                              },
-                                              "originating_lab": {
-                                                "value": "Houston Methodist Hospital"
-                                              },
-                                              "pangolin_lineage": {
-                                                "value": "B.1.26"
-                                              },
-                                              "recency": {
-                                                "value": "Older"
-                                              },
-                                              "region": {
-                                                "value": "North America"
-                                              },
-                                              "region_exposure": {
-                                                "value": "North America"
-                                              },
-                                              "subclade_membership": {
-                                                "value": "20C"
-                                              },
-                                              "submitting_lab": {
-                                                "value": "Houston Methodist Hospital"
-                                              },
-                                              "url": "https://www.gisaid.org"
-                                            }
-                                          },
-                                          {
-                                            "branch_attrs": {
-                                              "mutations": {}
-                                            },
-                                            "name": "USA/TX-HMH-1526/2020",
-                                            "node_attrs": {
-                                              "GISAID_clade": {
-                                                "value": "GH"
-                                              },
-                                              "author": {
-                                                "author": "S. Wesley Long et al",
-                                                "value": "S. Wesley Long et al A"
-                                              },
-                                              "clade_membership": {
-                                                "value": "20C"
-                                              },
-                                              "country": {
-                                                "confidence": {
-                                                  "USA": 0.9999999999999999
-                                                },
-                                                "entropy": -9.99866855976916e-13,
-                                                "value": "USA"
-                                              },
-                                              "div": 8,
-                                              "division": {
-                                                "value": "Texas"
-                                              },
-                                              "division_exposure": {
-                                                "value": "Texas"
-                                              },
-                                              "gisaid_epi_isl": {
-                                                "value": "EPI_ISL_542774"
-                                              },
-                                              "host": {
-                                                "value": "Human"
-                                              },
-                                              "location": {
-                                                "value": "Greater Houston Area"
-                                              },
-                                              "num_date": {
-                                                "confidence": [
-                                                  2020.3210382513662,
-                                                  2020.3210382513662
-                                                ],
-                                                "value": 2020.3210382513662
-                                              },
-                                              "originating_lab": {
-                                                "value": "Houston Methodist Hospital"
-                                              },
-                                              "pangolin_lineage": {
-                                                "value": "B.1.26"
-                                              },
-                                              "recency": {
-                                                "value": "Older"
-                                              },
-                                              "region": {
-                                                "value": "North America"
-                                              },
-                                              "region_exposure": {
-                                                "value": "North America"
-                                              },
-                                              "subclade_membership": {
-                                                "value": "20C"
-                                              },
-                                              "submitting_lab": {
-                                                "value": "Houston Methodist Hospital"
-                                              },
-                                              "url": "https://www.gisaid.org"
-                                            }
-                                          }
-                                        ],
-                                        "name": "NODE_0000023",
-                                        "node_attrs": {
-                                          "clade_membership": {
-                                            "value": "20C"
-                                          },
-                                          "div": 8,
-                                          "num_date": {
-                                            "confidence": [
-                                              2020.2342475576909,
-                                              2020.282786885246
-                                            ],
-                                            "value": 2020.2435026065448
-                                          },
-                                          "subclade_membership": {
-                                            "value": "20C"
-                                          },
-                                          "country": {
-                                            "confidence": {
-                                              "Canada": 0.0013819613581825588,
-                                              "Europe": 0.0015156650283445065,
-                                              "Oceania": 0.0239163691556117,
-                                              "USA": 0.9725733446381445
-                                            },
-                                            "entropy": 0.1398024622931732,
-                                            "value": "USA"
-                                          }
-                                        }
-                                      },
-                                      {
-                                        "branch_attrs": {
-                                          "mutations": {}
-                                        },
-                                        "children": [
-                                          {
-                                            "branch_attrs": {
-                                              "mutations": {}
-                                            },
-                                            "children": [
-                                              {
-                                                "branch_attrs": {
-                                                  "mutations": {}
-                                                },
-                                                "name": "USA/TX-HMH-823/2020",
-                                                "node_attrs": {
-                                                  "GISAID_clade": {
-                                                    "value": "GH"
-                                                  },
-                                                  "author": {
-                                                    "author": "S. Wesley Long et al",
-                                                    "value": "S. Wesley Long et al A"
-                                                  },
-                                                  "clade_membership": {
-                                                    "value": "20C"
-                                                  },
-                                                  "country": {
-                                                    "confidence": {
-                                                      "USA": 0.9999999999999999
-                                                    },
-                                                    "entropy": -9.99866855976916e-13,
-                                                    "value": "USA"
-                                                  },
-                                                  "div": 8,
-                                                  "division": {
-                                                    "value": "Texas"
-                                                  },
-                                                  "division_exposure": {
-                                                    "value": "Texas"
-                                                  },
-                                                  "gisaid_epi_isl": {
-                                                    "value": "EPI_ISL_545855"
-                                                  },
-                                                  "host": {
-                                                    "value": "Human"
-                                                  },
-                                                  "location": {
-                                                    "value": "Greater Houston Area"
-                                                  },
-                                                  "num_date": {
-                                                    "confidence": [
-                                                      2020.2609289617487,
-                                                      2020.2609289617487
-                                                    ],
-                                                    "value": 2020.2609289617487
-                                                  },
-                                                  "originating_lab": {
-                                                    "value": "Houston Methodist Hospital"
-                                                  },
-                                                  "pangolin_lineage": {
-                                                    "value": "B.1.26"
-                                                  },
-                                                  "recency": {
-                                                    "value": "Older"
-                                                  },
-                                                  "region": {
-                                                    "value": "North America"
-                                                  },
-                                                  "region_exposure": {
-                                                    "value": "North America"
-                                                  },
-                                                  "subclade_membership": {
-                                                    "value": "20C"
-                                                  },
-                                                  "submitting_lab": {
-                                                    "value": "Houston Methodist Hospital"
-                                                  },
-                                                  "url": "https://www.gisaid.org"
-                                                }
-                                              },
-                                              {
-                                                "branch_attrs": {
-                                                  "mutations": {}
-                                                },
-                                                "name": "NewZealand/20VR2103/2020",
-                                                "node_attrs": {
-                                                  "GISAID_clade": {
-                                                    "value": "GH"
-                                                  },
-                                                  "author": {
-                                                    "author": "Xiaoyun Ren et al",
-                                                    "value": "Xiaoyun Ren et al"
-                                                  },
-                                                  "clade_membership": {
-                                                    "value": "20C"
-                                                  },
-                                                  "country": {
-                                                    "confidence": {
-                                                      "Oceania": 1.0
-                                                    },
-                                                    "entropy": -1.000088900581841e-12,
-                                                    "value": "Oceania"
-                                                  },
-                                                  "div": 8,
-                                                  "division": {
-                                                    "value": "Oceania"
-                                                  },
-                                                  "division_exposure": {
-                                                    "value": "Oceania"
-                                                  },
-                                                  "gisaid_epi_isl": {
-                                                    "value": "EPI_ISL_579230"
-                                                  },
-                                                  "host": {
-                                                    "value": "Human"
-                                                  },
-                                                  "num_date": {
-                                                    "confidence": [
-                                                      2020.26912568306,
-                                                      2020.26912568306
-                                                    ],
-                                                    "value": 2020.26912568306
-                                                  },
-                                                  "originating_lab": {
-                                                    "value": "Middlemore Hospital"
-                                                  },
-                                                  "pangolin_lineage": {
-                                                    "value": "B.1.26"
-                                                  },
-                                                  "recency": {
-                                                    "value": "One week ago"
-                                                  },
-                                                  "region": {
-                                                    "value": "Oceania"
-                                                  },
-                                                  "region_exposure": {
-                                                    "value": "Oceania"
-                                                  },
-                                                  "sex": {
-                                                    "value": "Female"
-                                                  },
-                                                  "subclade_membership": {
-                                                    "value": "20C"
-                                                  },
-                                                  "submitting_lab": {
-                                                    "value": "Institute of Environmental Science and Research (ESR)"
-                                                  },
-                                                  "url": "https://www.gisaid.org"
-                                                }
-                                              }
-                                            ],
-                                            "name": "NODE_0000025",
-                                            "node_attrs": {
-                                              "clade_membership": {
-                                                "value": "20C"
-                                              },
-                                              "div": 8,
-                                              "num_date": {
-                                                "confidence": [
-                                                  2020.2355043485331,
-                                                  2020.2609289617487
-                                                ],
-                                                "value": 2020.2440733867875
-                                              },
-                                              "subclade_membership": {
-                                                "value": "20C"
-                                              },
-                                              "country": {
-                                                "confidence": {
-                                                  "Canada": 0.0024960766555405076,
-                                                  "Europe": 0.0027319851179281457,
-                                                  "Oceania": 0.3816407285255154,
-                                                  "USA": 0.611651033361571
-                                                },
-                                                "entropy": 0.7090382624132017,
-                                                "value": "USA"
-                                              }
-                                            }
-                                          },
-                                          {
-                                            "branch_attrs": {
-                                              "mutations": {}
-                                            },
-                                            "children": [
-                                              {
-                                                "branch_attrs": {
-                                                  "mutations": {}
-                                                },
-                                                "name": "NewZealand/20VR1816/2020",
-                                                "node_attrs": {
-                                                  "GISAID_clade": {
-                                                    "value": "GH"
-                                                  },
-                                                  "author": {
-                                                    "author": "Matt Storey et al",
-                                                    "value": "Matt Storey et al"
-                                                  },
-                                                  "clade_membership": {
-                                                    "value": "20C"
-                                                  },
-                                                  "country": {
-                                                    "confidence": {
-                                                      "Oceania": 1.0
-                                                    },
-                                                    "entropy": -1.000088900581841e-12,
-                                                    "value": "Oceania"
-                                                  },
-                                                  "div": 8,
-                                                  "division": {
-                                                    "value": "Oceania"
-                                                  },
-                                                  "division_exposure": {
-                                                    "value": "Oceania"
-                                                  },
-                                                  "gisaid_epi_isl": {
-                                                    "value": "EPI_ISL_456263"
-                                                  },
-                                                  "host": {
-                                                    "value": "Human"
-                                                  },
-                                                  "num_date": {
-                                                    "confidence": [
-                                                      2020.2363387978141,
-                                                      2020.2363387978141
-                                                    ],
-                                                    "value": 2020.2363387978141
-                                                  },
-                                                  "originating_lab": {
-                                                    "value": "Southern Community Labs Dunedin"
-                                                  },
-                                                  "pangolin_lineage": {
-                                                    "value": "B.1.26"
-                                                  },
-                                                  "recency": {
-                                                    "value": "Older"
-                                                  },
-                                                  "region": {
-                                                    "value": "Oceania"
-                                                  },
-                                                  "region_exposure": {
-                                                    "value": "Oceania"
-                                                  },
-                                                  "subclade_membership": {
-                                                    "value": "20C"
-                                                  },
-                                                  "submitting_lab": {
-                                                    "value": "Institute of Environmental Science and Research (ESR)"
-                                                  },
-                                                  "url": "https://www.gisaid.org"
-                                                }
-                                              },
-                                              {
-                                                "branch_attrs": {
-                                                  "mutations": {}
-                                                },
-                                                "name": "USA/WA-S370/2020",
-                                                "node_attrs": {
-                                                  "GISAID_clade": {
-                                                    "value": "GH"
-                                                  },
-                                                  "author": {
-                                                    "author": "Chu et al et al",
-                                                    "value": "Chu et al et al"
-                                                  },
-                                                  "clade_membership": {
-                                                    "value": "20C"
-                                                  },
-                                                  "country": {
-                                                    "confidence": {
-                                                      "USA": 0.9999999999999999
-                                                    },
-                                                    "entropy": -9.99866855976916e-13,
-                                                    "value": "USA"
-                                                  },
-                                                  "div": 8,
-                                                  "division": {
-                                                    "value": "Washington"
-                                                  },
-                                                  "division_exposure": {
-                                                    "value": "Washington"
-                                                  },
-                                                  "genbank_accession": {
-                                                    "value": "MT632917.1"
-                                                  },
-                                                  "gisaid_epi_isl": {
-                                                    "value": "EPI_ISL_434130"
-                                                  },
-                                                  "host": {
-                                                    "value": "Human"
-                                                  },
-                                                  "location": {
-                                                    "value": "Yakima County"
-                                                  },
-                                                  "num_date": {
-                                                    "confidence": [
-                                                      2020.2390710382513,
-                                                      2020.2390710382513
-                                                    ],
-                                                    "value": 2020.2390710382513
-                                                  },
-                                                  "originating_lab": {
-                                                    "value": "Washington State Department of Health"
-                                                  },
-                                                  "pangolin_lineage": {
-                                                    "value": "B.1.26"
-                                                  },
-                                                  "recency": {
-                                                    "value": "Older"
-                                                  },
-                                                  "region": {
-                                                    "value": "North America"
-                                                  },
-                                                  "region_exposure": {
-                                                    "value": "North America"
-                                                  },
-                                                  "subclade_membership": {
-                                                    "value": "20C"
-                                                  },
-                                                  "submitting_lab": {
-                                                    "value": "Seattle Flu Study"
-                                                  },
-                                                  "url": "https://www.gisaid.org"
-                                                }
-                                              }
-                                            ],
-                                            "name": "NODE_0000026",
-                                            "node_attrs": {
-                                              "clade_membership": {
-                                                "value": "20C"
-                                              },
-                                              "div": 8,
-                                              "num_date": {
-                                                "confidence": [
-                                                  2020.2283490440534,
-                                                  2020.2363387978141
-                                                ],
-                                                "value": 2020.2363387978141
-                                              },
-                                              "subclade_membership": {
-                                                "value": "20C"
-                                              },
-                                              "country": {
-                                                "confidence": {
-                                                  "Canada": 0.0024960766555405076,
-                                                  "Europe": 0.0027319851179281457,
-                                                  "Oceania": 0.3816407285255154,
-                                                  "USA": 0.611651033361571
-                                                },
-                                                "entropy": 0.7090382624132017,
-                                                "value": "USA"
-                                              }
-                                            }
-                                          }
-                                        ],
-                                        "name": "NODE_0000024",
-                                        "node_attrs": {
-                                          "clade_membership": {
-                                            "value": "20C"
-                                          },
-                                          "div": 8,
-                                          "num_date": {
-                                            "confidence": [
-                                              2020.2176818247103,
-                                              2020.2334277787907
-                                            ],
-                                            "value": 2020.2271765860216
-                                          },
-                                          "subclade_membership": {
-                                            "value": "20C"
-                                          },
-                                          "country": {
-                                            "confidence": {
-                                              "Canada": 0.0024432673588388196,
-                                              "Europe": 0.0026731926251153493,
-                                              "Oceania": 0.28918854392658244,
-                                              "USA": 0.704401214880371
-                                            },
-                                            "entropy": 0.6447526446289547,
-                                            "value": "USA"
-                                          }
-                                        }
-                                      }
-                                    ],
-                                    "name": "NODE_0000022",
-                                    "node_attrs": {
-                                      "clade_membership": {
-                                        "value": "20C"
-                                      },
-                                      "div": 8,
-                                      "num_date": {
-                                        "confidence": [
-                                          2020.2083932823923,
-                                          2020.2324959632758
-                                        ],
-                                        "value": 2020.2187920584172
-                                      },
-                                      "subclade_membership": {
-                                        "value": "20C"
-                                      },
-                                      "country": {
-                                        "confidence": {
-                                          "Canada": 0.002247168484307942,
-                                          "Europe": 0.0024912378441397094,
-                                          "Oceania": 0.09163287507268816,
-                                          "USA": 0.9025760328177106
-                                        },
-                                        "entropy": 0.3473715191741807,
-                                        "value": "USA"
-                                      }
-                                    }
-                                  }
-                                ],
-                                "name": "NODE_0000020",
-                                "node_attrs": {
-                                  "clade_membership": {
-                                    "value": "20C"
-                                  },
-                                  "div": 8,
-                                  "num_date": {
-                                    "confidence": [
-                                      2020.1880266896972,
-                                      2020.214127687473
-                                    ],
-                                    "value": 2020.2104040692857
-                                  },
-                                  "subclade_membership": {
-                                    "value": "20C"
-                                  },
-                                  "country": {
-                                    "confidence": {
-                                      "Canada": 0.002066663604169483,
-                                      "Europe": 0.0024963057051997305,
-                                      "Oceania": 0.042758605039242815,
-                                      "USA": 0.9518083418367274
-                                    },
-                                    "entropy": 0.21566172170844872,
-                                    "value": "USA"
-                                  }
-                                }
-                              },
-                              {
-                                "branch_attrs": {
-                                  "mutations": {}
-                                },
-                                "children": [
-                                  {
-                                    "branch_attrs": {
-                                      "mutations": {}
-                                    },
-                                    "children": [
-                                      {
-                                        "branch_attrs": {
-                                          "mutations": {}
-                                        },
-                                        "children": [
-                                          {
-                                            "branch_attrs": {
-                                              "mutations": {}
-                                            },
-                                            "name": "Canada/NS-NML-963/2020",
-                                            "node_attrs": {
-                                              "GISAID_clade": {
-                                                "value": "GH"
-                                              },
-                                              "age": {
-                                                "value": "27"
-                                              },
-                                              "author": {
-                                                "author": "Anna Majer et al",
-                                                "value": "Anna Majer et al"
-                                              },
-                                              "clade_membership": {
-                                                "value": "20C"
-                                              },
-                                              "country": {
-                                                "confidence": {
-                                                  "Canada": 1.0
-                                                },
-                                                "entropy": -1.000088900581841e-12,
-                                                "value": "Canada"
-                                              },
-                                              "div": 8,
-                                              "division": {
-                                                "value": "Nova Scotia"
-                                              },
-                                              "division_exposure": {
-                                                "value": "Nova Scotia"
-                                              },
-                                              "gisaid_epi_isl": {
-                                                "value": "EPI_ISL_579589"
-                                              },
-                                              "host": {
-                                                "value": "Human"
-                                              },
-                                              "num_date": {
-                                                "confidence": [
-                                                  2020.2418032786886,
-                                                  2020.2418032786886
-                                                ],
-                                                "value": 2020.2418032786886
-                                              },
-                                              "originating_lab": {
-                                                "value": "QEII Health Sciences Centre"
-                                              },
-                                              "pangolin_lineage": {
-                                                "value": "B.1.26"
-                                              },
-                                              "recency": {
-                                                "value": "One week ago"
-                                              },
-                                              "region": {
-                                                "value": "North America"
-                                              },
-                                              "region_exposure": {
-                                                "value": "North America"
-                                              },
-                                              "sex": {
-                                                "value": "Female"
-                                              },
-                                              "subclade_membership": {
-                                                "value": "20C"
-                                              },
-                                              "submitting_lab": {
-                                                "value": "National Microbiology Laboratory (NML)"
-                                              },
-                                              "url": "https://www.gisaid.org"
-                                            }
-                                          },
-                                          {
-                                            "branch_attrs": {
-                                              "mutations": {}
-                                            },
-                                            "name": "USA/FL-BPHL-1586/2020",
-                                            "node_attrs": {
-                                              "GISAID_clade": {
-                                                "value": "GH"
-                                              },
-                                              "author": {
-                                                "author": "Sarah Schmedes et al",
-                                                "value": "Sarah Schmedes et al"
                                               },
                                               "clade_membership": {
                                                 "value": "20C"
@@ -3087,32 +2382,35 @@
                                               },
                                               "div": 8,
                                               "division": {
-                                                "value": "Florida"
+                                                "value": "Texas"
                                               },
                                               "division_exposure": {
-                                                "value": "Florida"
+                                                "value": "Texas"
                                               },
                                               "gisaid_epi_isl": {
-                                                "value": "EPI_ISL_568684"
+                                                "value": "EPI_ISL_545855"
                                               },
                                               "host": {
                                                 "value": "Human"
                                               },
+                                              "location": {
+                                                "value": "Greater Houston Area"
+                                              },
                                               "num_date": {
                                                 "confidence": [
-                                                  2020.2281420765028,
-                                                  2020.2281420765028
+                                                  2020.2609289617487,
+                                                  2020.2609289617487
                                                 ],
-                                                "value": 2020.2281420765028
+                                                "value": 2020.2609289617487
                                               },
                                               "originating_lab": {
-                                                "value": "Florida Bureau of Public Health Laboratories"
+                                                "value": "Houston Methodist Hospital"
                                               },
                                               "pangolin_lineage": {
                                                 "value": "B.1.26"
                                               },
                                               "recency": {
-                                                "value": "One month ago"
+                                                "value": "Older"
                                               },
                                               "region": {
                                                 "value": "North America"
@@ -3124,13 +2422,83 @@
                                                 "value": "20C"
                                               },
                                               "submitting_lab": {
-                                                "value": "Florida Bureau of Public Health Laboratories"
+                                                "value": "Houston Methodist Hospital"
+                                              },
+                                              "url": "https://www.gisaid.org"
+                                            }
+                                          },
+                                          {
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "name": "NewZealand/20VR2103/2020",
+                                            "node_attrs": {
+                                              "GISAID_clade": {
+                                                "value": "GH"
+                                              },
+                                              "author": {
+                                                "author": "Xiaoyun Ren et al",
+                                                "value": "Xiaoyun Ren et al"
+                                              },
+                                              "clade_membership": {
+                                                "value": "20C"
+                                              },
+                                              "country": {
+                                                "confidence": {
+                                                  "Oceania": 1.0
+                                                },
+                                                "entropy": -1.000088900581841e-12,
+                                                "value": "Oceania"
+                                              },
+                                              "div": 8,
+                                              "division": {
+                                                "value": "Oceania"
+                                              },
+                                              "division_exposure": {
+                                                "value": "Oceania"
+                                              },
+                                              "gisaid_epi_isl": {
+                                                "value": "EPI_ISL_579230"
+                                              },
+                                              "host": {
+                                                "value": "Human"
+                                              },
+                                              "num_date": {
+                                                "confidence": [
+                                                  2020.26912568306,
+                                                  2020.26912568306
+                                                ],
+                                                "value": 2020.26912568306
+                                              },
+                                              "originating_lab": {
+                                                "value": "Middlemore Hospital"
+                                              },
+                                              "pangolin_lineage": {
+                                                "value": "B.1.26"
+                                              },
+                                              "recency": {
+                                                "value": "One month ago"
+                                              },
+                                              "region": {
+                                                "value": "Oceania"
+                                              },
+                                              "region_exposure": {
+                                                "value": "Oceania"
+                                              },
+                                              "sex": {
+                                                "value": "Female"
+                                              },
+                                              "subclade_membership": {
+                                                "value": "20C"
+                                              },
+                                              "submitting_lab": {
+                                                "value": "Institute of Environmental Science and Research (ESR)"
                                               },
                                               "url": "https://www.gisaid.org"
                                             }
                                           }
                                         ],
-                                        "name": "NODE_0000029",
+                                        "name": "NODE_0000023",
                                         "node_attrs": {
                                           "clade_membership": {
                                             "value": "20C"
@@ -3138,22 +2506,22 @@
                                           "div": 8,
                                           "num_date": {
                                             "confidence": [
-                                              2020.218032306426,
-                                              2020.2281420765028
+                                              2020.2358202471746,
+                                              2020.2609289617487
                                             ],
-                                            "value": 2020.2277543901255
+                                            "value": 2020.2440733867875
                                           },
                                           "subclade_membership": {
                                             "value": "20C"
                                           },
                                           "country": {
                                             "confidence": {
-                                              "Canada": 0.13762423688648837,
-                                              "Europe": 0.006562853125721163,
-                                              "Oceania": 0.037555852501100356,
-                                              "USA": 0.8147028131019596
+                                              "Canada": 0.002621004328092046,
+                                              "Europe": 0.002872846950302409,
+                                              "Oceania": 0.2718133667148962,
+                                              "USA": 0.7211888505427198
                                             },
-                                            "entropy": 0.6161860070745597,
+                                            "entropy": 0.631966522530071,
                                             "value": "USA"
                                           }
                                         }
@@ -3186,9 +2554,9 @@
                                                   },
                                                   "country": {
                                                     "confidence": {
-                                                      "USA": 1.0
+                                                      "USA": 0.9999999999999999
                                                     },
-                                                    "entropy": -1.000088900581841e-12,
+                                                    "entropy": -9.99866855976916e-13,
                                                     "value": "USA"
                                                   },
                                                   "div": 8,
@@ -3259,9 +2627,9 @@
                                                   },
                                                   "country": {
                                                     "confidence": {
-                                                      "USA": 1.0
+                                                      "USA": 0.9999999999999999
                                                     },
-                                                    "entropy": -1.000088900581841e-12,
+                                                    "entropy": -9.99866855976916e-13,
                                                     "value": "USA"
                                                   },
                                                   "div": 8,
@@ -3315,7 +2683,7 @@
                                                 }
                                               }
                                             ],
-                                            "name": "NODE_0000031",
+                                            "name": "NODE_0000025",
                                             "node_attrs": {
                                               "clade_membership": {
                                                 "value": "20C"
@@ -3323,22 +2691,22 @@
                                               "div": 8,
                                               "num_date": {
                                                 "confidence": [
-                                                  2020.23408196382,
+                                                  2020.2357598945189,
                                                   2020.2445355191257
                                                 ],
-                                                "value": 2020.2411644041335
+                                                "value": 2020.2412196746254
                                               },
                                               "subclade_membership": {
                                                 "value": "20C"
                                               },
                                               "country": {
                                                 "confidence": {
-                                                  "Canada": 0.001816367973777434,
-                                                  "Europe": 0.0015741392255505106,
-                                                  "Oceania": 0.02396970729481677,
-                                                  "USA": 0.9719989448881545
+                                                  "Canada": 0.0013447366266899439,
+                                                  "Europe": 0.0014717187823276702,
+                                                  "Oceania": 0.028731846262164962,
+                                                  "USA": 0.9678390175670487
                                                 },
-                                                "entropy": 0.14336988232883557,
+                                                "entropy": 0.1566497961219224,
                                                 "value": "USA"
                                               }
                                             }
@@ -3488,6 +2856,630 @@
                                                 }
                                               }
                                             ],
+                                            "name": "NODE_0000026",
+                                            "node_attrs": {
+                                              "clade_membership": {
+                                                "value": "20C"
+                                              },
+                                              "div": 8,
+                                              "num_date": {
+                                                "confidence": [
+                                                  2020.2357237363274,
+                                                  2020.2445355191257
+                                                ],
+                                                "value": 2020.2435670862064
+                                              },
+                                              "subclade_membership": {
+                                                "value": "20C"
+                                              },
+                                              "country": {
+                                                "confidence": {
+                                                  "Canada": 0.0026131234465559066,
+                                                  "Europe": 0.0028593399163740823,
+                                                  "Oceania": 0.2668529863242308,
+                                                  "USA": 0.7261734063600417
+                                                },
+                                                "entropy": 0.6269273734764169,
+                                                "value": "USA"
+                                              }
+                                            }
+                                          }
+                                        ],
+                                        "name": "NODE_0000024",
+                                        "node_attrs": {
+                                          "clade_membership": {
+                                            "value": "20C"
+                                          },
+                                          "div": 8,
+                                          "num_date": {
+                                            "confidence": [
+                                              2020.2251986261715,
+                                              2020.2407540797474
+                                            ],
+                                            "value": 2020.2402216346866
+                                          },
+                                          "subclade_membership": {
+                                            "value": "20C"
+                                          },
+                                          "country": {
+                                            "confidence": {
+                                              "Canada": 0.0021678286630539205,
+                                              "Europe": 0.002371806872531971,
+                                              "Oceania": 0.1288112263226944,
+                                              "USA": 0.8655943766103756
+                                            },
+                                            "entropy": 0.4237883507535752,
+                                            "value": "USA"
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    "name": "NODE_0000022",
+                                    "node_attrs": {
+                                      "clade_membership": {
+                                        "value": "20C"
+                                      },
+                                      "div": 8,
+                                      "num_date": {
+                                        "confidence": [
+                                          2020.2116723377617,
+                                          2020.2364329867585
+                                        ],
+                                        "value": 2020.2270293360061
+                                      },
+                                      "subclade_membership": {
+                                        "value": "20C"
+                                      },
+                                      "country": {
+                                        "confidence": {
+                                          "Canada": 0.0022521562333747973,
+                                          "Europe": 0.002493290613986334,
+                                          "Oceania": 0.13591716117376362,
+                                          "USA": 0.8582537701909427
+                                        },
+                                        "entropy": 0.43851234239572506,
+                                        "value": "USA"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "name": "NODE_0000020",
+                                "node_attrs": {
+                                  "clade_membership": {
+                                    "value": "20C"
+                                  },
+                                  "div": 8,
+                                  "num_date": {
+                                    "confidence": [
+                                      2020.1896254822893,
+                                      2020.214127687473
+                                    ],
+                                    "value": 2020.2106128578157
+                                  },
+                                  "subclade_membership": {
+                                    "value": "20C"
+                                  },
+                                  "country": {
+                                    "confidence": {
+                                      "Canada": 0.0019889557562287508,
+                                      "Europe": 0.0023968532935203127,
+                                      "Oceania": 0.051486159071304084,
+                                      "USA": 0.9432673636504607
+                                    },
+                                    "entropy": 0.2407304017841001,
+                                    "value": "USA"
+                                  }
+                                }
+                              },
+                              {
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "name": "Canada/NS-NML-963/2020",
+                                            "node_attrs": {
+                                              "GISAID_clade": {
+                                                "value": "GH"
+                                              },
+                                              "age": {
+                                                "value": "27"
+                                              },
+                                              "author": {
+                                                "author": "Anna Majer et al",
+                                                "value": "Anna Majer et al"
+                                              },
+                                              "clade_membership": {
+                                                "value": "20C"
+                                              },
+                                              "country": {
+                                                "confidence": {
+                                                  "Canada": 1.0
+                                                },
+                                                "entropy": -1.000088900581841e-12,
+                                                "value": "Canada"
+                                              },
+                                              "div": 8,
+                                              "division": {
+                                                "value": "Nova Scotia"
+                                              },
+                                              "division_exposure": {
+                                                "value": "Nova Scotia"
+                                              },
+                                              "gisaid_epi_isl": {
+                                                "value": "EPI_ISL_579589"
+                                              },
+                                              "host": {
+                                                "value": "Human"
+                                              },
+                                              "num_date": {
+                                                "confidence": [
+                                                  2020.2418032786886,
+                                                  2020.2418032786886
+                                                ],
+                                                "value": 2020.2418032786886
+                                              },
+                                              "originating_lab": {
+                                                "value": "QEII Health Sciences Centre"
+                                              },
+                                              "pangolin_lineage": {
+                                                "value": "B.1.26"
+                                              },
+                                              "recency": {
+                                                "value": "One month ago"
+                                              },
+                                              "region": {
+                                                "value": "North America"
+                                              },
+                                              "region_exposure": {
+                                                "value": "North America"
+                                              },
+                                              "sex": {
+                                                "value": "Female"
+                                              },
+                                              "subclade_membership": {
+                                                "value": "20C"
+                                              },
+                                              "submitting_lab": {
+                                                "value": "National Microbiology Laboratory (NML)"
+                                              },
+                                              "url": "https://www.gisaid.org"
+                                            }
+                                          },
+                                          {
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "name": "USA/FL-BPHL-1586/2020",
+                                            "node_attrs": {
+                                              "GISAID_clade": {
+                                                "value": "GH"
+                                              },
+                                              "author": {
+                                                "author": "Sarah Schmedes et al",
+                                                "value": "Sarah Schmedes et al"
+                                              },
+                                              "clade_membership": {
+                                                "value": "20C"
+                                              },
+                                              "country": {
+                                                "confidence": {
+                                                  "USA": 1.0
+                                                },
+                                                "entropy": -1.000088900581841e-12,
+                                                "value": "USA"
+                                              },
+                                              "div": 8,
+                                              "division": {
+                                                "value": "Florida"
+                                              },
+                                              "division_exposure": {
+                                                "value": "Florida"
+                                              },
+                                              "gisaid_epi_isl": {
+                                                "value": "EPI_ISL_568684"
+                                              },
+                                              "host": {
+                                                "value": "Human"
+                                              },
+                                              "num_date": {
+                                                "confidence": [
+                                                  2020.2281420765028,
+                                                  2020.2281420765028
+                                                ],
+                                                "value": 2020.2281420765028
+                                              },
+                                              "originating_lab": {
+                                                "value": "Florida Bureau of Public Health Laboratories"
+                                              },
+                                              "pangolin_lineage": {
+                                                "value": "B.1.26"
+                                              },
+                                              "recency": {
+                                                "value": "Older"
+                                              },
+                                              "region": {
+                                                "value": "North America"
+                                              },
+                                              "region_exposure": {
+                                                "value": "North America"
+                                              },
+                                              "subclade_membership": {
+                                                "value": "20C"
+                                              },
+                                              "submitting_lab": {
+                                                "value": "Florida Bureau of Public Health Laboratories"
+                                              },
+                                              "url": "https://www.gisaid.org"
+                                            }
+                                          }
+                                        ],
+                                        "name": "NODE_0000029",
+                                        "node_attrs": {
+                                          "clade_membership": {
+                                            "value": "20C"
+                                          },
+                                          "div": 8,
+                                          "num_date": {
+                                            "confidence": [
+                                              2020.2177321247405,
+                                              2020.2281420765028
+                                            ],
+                                            "value": 2020.227158512877
+                                          },
+                                          "subclade_membership": {
+                                            "value": "20C"
+                                          },
+                                          "country": {
+                                            "confidence": {
+                                              "Canada": 0.13299376869278906,
+                                              "Europe": 0.006261706016748137,
+                                              "Oceania": 0.03441092874052262,
+                                              "USA": 0.8229465613699072
+                                            },
+                                            "entropy": 0.5956471877610631,
+                                            "value": "USA"
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "name": "NewZealand/20VR1816/2020",
+                                                "node_attrs": {
+                                                  "GISAID_clade": {
+                                                    "value": "GH"
+                                                  },
+                                                  "author": {
+                                                    "author": "Matt Storey et al",
+                                                    "value": "Matt Storey et al"
+                                                  },
+                                                  "clade_membership": {
+                                                    "value": "20C"
+                                                  },
+                                                  "country": {
+                                                    "confidence": {
+                                                      "Oceania": 1.0
+                                                    },
+                                                    "entropy": -1.000088900581841e-12,
+                                                    "value": "Oceania"
+                                                  },
+                                                  "div": 8,
+                                                  "division": {
+                                                    "value": "Oceania"
+                                                  },
+                                                  "division_exposure": {
+                                                    "value": "Oceania"
+                                                  },
+                                                  "gisaid_epi_isl": {
+                                                    "value": "EPI_ISL_456263"
+                                                  },
+                                                  "host": {
+                                                    "value": "Human"
+                                                  },
+                                                  "num_date": {
+                                                    "confidence": [
+                                                      2020.2363387978141,
+                                                      2020.2363387978141
+                                                    ],
+                                                    "value": 2020.2363387978141
+                                                  },
+                                                  "originating_lab": {
+                                                    "value": "Southern Community Labs Dunedin"
+                                                  },
+                                                  "pangolin_lineage": {
+                                                    "value": "B.1.26"
+                                                  },
+                                                  "recency": {
+                                                    "value": "Older"
+                                                  },
+                                                  "region": {
+                                                    "value": "Oceania"
+                                                  },
+                                                  "region_exposure": {
+                                                    "value": "Oceania"
+                                                  },
+                                                  "subclade_membership": {
+                                                    "value": "20C"
+                                                  },
+                                                  "submitting_lab": {
+                                                    "value": "Institute of Environmental Science and Research (ESR)"
+                                                  },
+                                                  "url": "https://www.gisaid.org"
+                                                }
+                                              },
+                                              {
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "name": "USA/WA-S370/2020",
+                                                "node_attrs": {
+                                                  "GISAID_clade": {
+                                                    "value": "GH"
+                                                  },
+                                                  "author": {
+                                                    "author": "Chu et al et al",
+                                                    "value": "Chu et al et al"
+                                                  },
+                                                  "clade_membership": {
+                                                    "value": "20C"
+                                                  },
+                                                  "country": {
+                                                    "confidence": {
+                                                      "USA": 1.0
+                                                    },
+                                                    "entropy": -1.000088900581841e-12,
+                                                    "value": "USA"
+                                                  },
+                                                  "div": 8,
+                                                  "division": {
+                                                    "value": "Washington"
+                                                  },
+                                                  "division_exposure": {
+                                                    "value": "Washington"
+                                                  },
+                                                  "genbank_accession": {
+                                                    "value": "MT632917.1"
+                                                  },
+                                                  "gisaid_epi_isl": {
+                                                    "value": "EPI_ISL_434130"
+                                                  },
+                                                  "host": {
+                                                    "value": "Human"
+                                                  },
+                                                  "location": {
+                                                    "value": "Yakima County"
+                                                  },
+                                                  "num_date": {
+                                                    "confidence": [
+                                                      2020.2390710382513,
+                                                      2020.2390710382513
+                                                    ],
+                                                    "value": 2020.2390710382513
+                                                  },
+                                                  "originating_lab": {
+                                                    "value": "Washington State Department of Health"
+                                                  },
+                                                  "pangolin_lineage": {
+                                                    "value": "B.1.26"
+                                                  },
+                                                  "recency": {
+                                                    "value": "Older"
+                                                  },
+                                                  "region": {
+                                                    "value": "North America"
+                                                  },
+                                                  "region_exposure": {
+                                                    "value": "North America"
+                                                  },
+                                                  "subclade_membership": {
+                                                    "value": "20C"
+                                                  },
+                                                  "submitting_lab": {
+                                                    "value": "Seattle Flu Study"
+                                                  },
+                                                  "url": "https://www.gisaid.org"
+                                                }
+                                              }
+                                            ],
+                                            "name": "NODE_0000031",
+                                            "node_attrs": {
+                                              "clade_membership": {
+                                                "value": "20C"
+                                              },
+                                              "div": 8,
+                                              "num_date": {
+                                                "confidence": [
+                                                  2020.2266614295731,
+                                                  2020.2363387978141
+                                                ],
+                                                "value": 2020.2363387978141
+                                              },
+                                              "subclade_membership": {
+                                                "value": "20C"
+                                              },
+                                              "country": {
+                                                "confidence": {
+                                                  "Canada": 0.003322995518865358,
+                                                  "Europe": 0.0029960735006000876,
+                                                  "Oceania": 0.23572030795221513,
+                                                  "USA": 0.7563983546440542
+                                                },
+                                                "entropy": 0.5982855761759853,
+                                                "value": "USA"
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "name": "USA/TX-HMH-1545/2020",
+                                                "node_attrs": {
+                                                  "GISAID_clade": {
+                                                    "value": "GH"
+                                                  },
+                                                  "author": {
+                                                    "author": "S. Wesley Long et al",
+                                                    "value": "S. Wesley Long et al A"
+                                                  },
+                                                  "clade_membership": {
+                                                    "value": "20C"
+                                                  },
+                                                  "country": {
+                                                    "confidence": {
+                                                      "USA": 1.0
+                                                    },
+                                                    "entropy": -1.000088900581841e-12,
+                                                    "value": "USA"
+                                                  },
+                                                  "div": 8,
+                                                  "division": {
+                                                    "value": "Texas"
+                                                  },
+                                                  "division_exposure": {
+                                                    "value": "Texas"
+                                                  },
+                                                  "gisaid_epi_isl": {
+                                                    "value": "EPI_ISL_542785"
+                                                  },
+                                                  "host": {
+                                                    "value": "Human"
+                                                  },
+                                                  "location": {
+                                                    "value": "Greater Houston Area"
+                                                  },
+                                                  "num_date": {
+                                                    "confidence": [
+                                                      2020.282786885246,
+                                                      2020.282786885246
+                                                    ],
+                                                    "value": 2020.282786885246
+                                                  },
+                                                  "originating_lab": {
+                                                    "value": "Houston Methodist Hospital"
+                                                  },
+                                                  "pangolin_lineage": {
+                                                    "value": "B.1.26"
+                                                  },
+                                                  "recency": {
+                                                    "value": "Older"
+                                                  },
+                                                  "region": {
+                                                    "value": "North America"
+                                                  },
+                                                  "region_exposure": {
+                                                    "value": "North America"
+                                                  },
+                                                  "subclade_membership": {
+                                                    "value": "20C"
+                                                  },
+                                                  "submitting_lab": {
+                                                    "value": "Houston Methodist Hospital"
+                                                  },
+                                                  "url": "https://www.gisaid.org"
+                                                }
+                                              },
+                                              {
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "name": "USA/TX-HMH-1526/2020",
+                                                "node_attrs": {
+                                                  "GISAID_clade": {
+                                                    "value": "GH"
+                                                  },
+                                                  "author": {
+                                                    "author": "S. Wesley Long et al",
+                                                    "value": "S. Wesley Long et al A"
+                                                  },
+                                                  "clade_membership": {
+                                                    "value": "20C"
+                                                  },
+                                                  "country": {
+                                                    "confidence": {
+                                                      "USA": 1.0
+                                                    },
+                                                    "entropy": -1.000088900581841e-12,
+                                                    "value": "USA"
+                                                  },
+                                                  "div": 8,
+                                                  "division": {
+                                                    "value": "Texas"
+                                                  },
+                                                  "division_exposure": {
+                                                    "value": "Texas"
+                                                  },
+                                                  "gisaid_epi_isl": {
+                                                    "value": "EPI_ISL_542774"
+                                                  },
+                                                  "host": {
+                                                    "value": "Human"
+                                                  },
+                                                  "location": {
+                                                    "value": "Greater Houston Area"
+                                                  },
+                                                  "num_date": {
+                                                    "confidence": [
+                                                      2020.3210382513662,
+                                                      2020.3210382513662
+                                                    ],
+                                                    "value": 2020.3210382513662
+                                                  },
+                                                  "originating_lab": {
+                                                    "value": "Houston Methodist Hospital"
+                                                  },
+                                                  "pangolin_lineage": {
+                                                    "value": "B.1.26"
+                                                  },
+                                                  "recency": {
+                                                    "value": "Older"
+                                                  },
+                                                  "region": {
+                                                    "value": "North America"
+                                                  },
+                                                  "region_exposure": {
+                                                    "value": "North America"
+                                                  },
+                                                  "subclade_membership": {
+                                                    "value": "20C"
+                                                  },
+                                                  "submitting_lab": {
+                                                    "value": "Houston Methodist Hospital"
+                                                  },
+                                                  "url": "https://www.gisaid.org"
+                                                }
+                                              }
+                                            ],
                                             "name": "NODE_0000032",
                                             "node_attrs": {
                                               "clade_membership": {
@@ -3496,22 +3488,22 @@
                                               "div": 8,
                                               "num_date": {
                                                 "confidence": [
-                                                  2020.2338632117119,
-                                                  2020.2445355191257
+                                                  2020.2358826993577,
+                                                  2020.282786885246
                                                 ],
-                                                "value": 2020.2436295828495
+                                                "value": 2020.2435026065448
                                               },
                                               "subclade_membership": {
                                                 "value": "20C"
                                               },
                                               "country": {
                                                 "confidence": {
-                                                  "Canada": 0.0034147020831984585,
-                                                  "Europe": 0.0030566928862116424,
-                                                  "Oceania": 0.24750113547315075,
-                                                  "USA": 0.7444360699474007
+                                                  "Canada": 0.0016615634911899902,
+                                                  "Europe": 0.0014461105302338692,
+                                                  "Oceania": 0.02100222045211611,
+                                                  "USA": 0.9753027488675544
                                                 },
-                                                "entropy": 0.6126474320872399,
+                                                "entropy": 0.129983781199928,
                                                 "value": "USA"
                                               }
                                             }
@@ -3525,22 +3517,22 @@
                                           "div": 8,
                                           "num_date": {
                                             "confidence": [
-                                              2020.2163591871706,
-                                              2020.2407540797474
+                                              2020.2165638558808,
+                                              2020.2329105452798
                                             ],
-                                            "value": 2020.227337118911
+                                            "value": 2020.227768166478
                                           },
                                           "subclade_membership": {
                                             "value": "20C"
                                           },
                                           "country": {
                                             "confidence": {
-                                              "Canada": 0.006143065852326928,
-                                              "Europe": 0.0028579773415729364,
-                                              "Oceania": 0.09162030881325507,
-                                              "USA": 0.8981171995810453
+                                              "Canada": 0.005703192694413975,
+                                              "Europe": 0.002662319775513751,
+                                              "Oceania": 0.08304937867562312,
+                                              "USA": 0.9074104240219512
                                             },
-                                            "entropy": 0.3719337723843562,
+                                            "entropy": 0.3479936840416015,
                                             "value": "USA"
                                           }
                                         }
@@ -3554,22 +3546,22 @@
                                       "div": 8,
                                       "num_date": {
                                         "confidence": [
-                                          2020.2025422569934,
-                                          2020.2243889724996
+                                          2020.2015989746355,
+                                          2020.2247138239684
                                         ],
-                                        "value": 2020.2181706839262
+                                        "value": 2020.2184994289146
                                       },
                                       "subclade_membership": {
                                         "value": "20C"
                                       },
                                       "country": {
                                         "confidence": {
-                                          "Canada": 0.024666354439690955,
-                                          "Europe": 0.003913792187880947,
-                                          "Oceania": 0.060134592348601294,
-                                          "USA": 0.9095363331890512
+                                          "Canada": 0.02309178932760527,
+                                          "Europe": 0.0036146107599811348,
+                                          "Oceania": 0.053564536763904956,
+                                          "USA": 0.9181152734552729
                                         },
-                                        "entropy": 0.379412351307045,
+                                        "entropy": 0.35292879779260505,
                                         "value": "USA"
                                       }
                                     }
@@ -3781,9 +3773,9 @@
                                                       },
                                                       "country": {
                                                         "confidence": {
-                                                          "USA": 0.9999999999999999
+                                                          "USA": 1.0
                                                         },
-                                                        "entropy": -9.99866855976916e-13,
+                                                        "entropy": -1.000088900581841e-12,
                                                         "value": "USA"
                                                       },
                                                       "div": 14,
@@ -3810,7 +3802,7 @@
                                                         "value": "B.1.26"
                                                       },
                                                       "recency": {
-                                                        "value": "1-2 days ago"
+                                                        "value": "3-7 days ago"
                                                       },
                                                       "region": {
                                                         "value": "North America"
@@ -3842,9 +3834,9 @@
                                                       },
                                                       "country": {
                                                         "confidence": {
-                                                          "USA": 0.9999999999999999
+                                                          "USA": 1.0
                                                         },
-                                                        "entropy": -9.99866855976916e-13,
+                                                        "entropy": -1.000088900581841e-12,
                                                         "value": "USA"
                                                       },
                                                       "div": 14,
@@ -3871,7 +3863,7 @@
                                                         "value": "B.1.26"
                                                       },
                                                       "recency": {
-                                                        "value": "1-2 days ago"
+                                                        "value": "3-7 days ago"
                                                       },
                                                       "region": {
                                                         "value": "North America"
@@ -3897,8 +3889,8 @@
                                                   "div": 14,
                                                   "num_date": {
                                                     "confidence": [
-                                                      2020.7067356939722,
-                                                      2020.8037052297589
+                                                      2020.706520556658,
+                                                      2020.8039383538444
                                                     ],
                                                     "value": 2020.7491375221057
                                                   },
@@ -3907,12 +3899,12 @@
                                                   },
                                                   "country": {
                                                     "confidence": {
-                                                      "Canada": 0.001372650777157392,
-                                                      "Europe": 0.0015000851845170244,
-                                                      "Oceania": 0.022540157046774256,
-                                                      "USA": 0.9739809504920656
+                                                      "Canada": 0.0012619058892735936,
+                                                      "Europe": 0.0013791810222147857,
+                                                      "Oceania": 0.01968737921179658,
+                                                      "USA": 0.9771155657268467
                                                     },
-                                                    "entropy": 0.13445184551170275,
+                                                    "entropy": 0.12162212067335247,
                                                     "value": "USA"
                                                   }
                                                 }
@@ -4071,7 +4063,7 @@
                                                             "value": "B.1.26"
                                                           },
                                                           "recency": {
-                                                            "value": "One week ago"
+                                                            "value": "One month ago"
                                                           },
                                                           "region": {
                                                             "value": "North America"
@@ -4138,7 +4130,7 @@
                                                             "value": "B.1.26"
                                                           },
                                                           "recency": {
-                                                            "value": "One week ago"
+                                                            "value": "One month ago"
                                                           },
                                                           "region": {
                                                             "value": "North America"
@@ -4164,22 +4156,22 @@
                                                       "div": 15,
                                                       "num_date": {
                                                         "confidence": [
-                                                          2020.5796535278898,
+                                                          2020.5795408137287,
                                                           2020.5997267759562
                                                         ],
-                                                        "value": 2020.5993924326685
+                                                        "value": 2020.5990879014012
                                                       },
                                                       "subclade_membership": {
                                                         "value": "20C"
                                                       },
                                                       "country": {
                                                         "confidence": {
-                                                          "Canada": 0.0012100072891877934,
-                                                          "Europe": 0.0013239707028133495,
-                                                          "Oceania": 0.012485957484885834,
-                                                          "USA": 0.9844649075960589
+                                                          "Canada": 0.0011082676358815512,
+                                                          "Europe": 0.0012127704922632548,
+                                                          "Oceania": 0.010768985064336507,
+                                                          "USA": 0.9864390385101929
                                                         },
-                                                        "entropy": 0.09094378672735837,
+                                                        "entropy": 0.08155681965484056,
                                                         "value": "USA"
                                                       }
                                                     }
@@ -4193,22 +4185,22 @@
                                                   "div": 15,
                                                   "num_date": {
                                                     "confidence": [
-                                                      2020.535170081267,
+                                                      2020.5352104534172,
                                                       2020.5969984647336
                                                     ],
-                                                    "value": 2020.5888722911047
+                                                    "value": 2020.5889664604522
                                                   },
                                                   "subclade_membership": {
                                                     "value": "20C"
                                                   },
                                                   "country": {
                                                     "confidence": {
-                                                      "Canada": 0.0015612852272047543,
-                                                      "Europe": 0.0017044195772658317,
-                                                      "Oceania": 0.02676819294273544,
-                                                      "USA": 0.9692868588213387
+                                                      "Canada": 0.0014305627470350209,
+                                                      "Europe": 0.0015619306018965836,
+                                                      "Oceania": 0.02326154626305419,
+                                                      "USA": 0.9731249661496545
                                                     },
-                                                    "entropy": 0.1530609727903255,
+                                                    "entropy": 0.13804442987415186,
                                                     "value": "USA"
                                                   }
                                                 }
@@ -4222,22 +4214,22 @@
                                               "div": 9,
                                               "num_date": {
                                                 "confidence": [
-                                                  2020.236720328775,
-                                                  2020.3857547553741
+                                                  2020.2384323918593,
+                                                  2020.3868898299281
                                                 ],
-                                                "value": 2020.261540348527
+                                                "value": 2020.2603595506316
                                               },
                                               "subclade_membership": {
                                                 "value": "20C"
                                               },
                                               "country": {
                                                 "confidence": {
-                                                  "Canada": 0.0022624301243397604,
-                                                  "Europe": 0.0024566141446179914,
-                                                  "Oceania": 0.08380595406205925,
-                                                  "USA": 0.9104092197991575
+                                                  "Canada": 0.0021139018514398345,
+                                                  "Europe": 0.0022959606938178227,
+                                                  "Oceania": 0.07560382989922981,
+                                                  "USA": 0.9189903854690736
                                                 },
-                                                "entropy": 0.32906517524604884,
+                                                "entropy": 0.30671910688695114,
                                                 "value": "USA"
                                               }
                                             }
@@ -4251,8 +4243,8 @@
                                           "div": 8,
                                           "num_date": {
                                             "confidence": [
-                                              2020.2219964888243,
-                                              2020.2664192608493
+                                              2020.220867822902,
+                                              2020.266547750816
                                             ],
                                             "value": 2020.2421567631222
                                           },
@@ -4261,12 +4253,12 @@
                                           },
                                           "country": {
                                             "confidence": {
-                                              "Canada": 0.003097930817003516,
-                                              "Europe": 0.0032866366028957536,
-                                              "Oceania": 0.29127200910127005,
-                                              "USA": 0.7006694149011241
+                                              "Canada": 0.003032989533765342,
+                                              "Europe": 0.0032232674493376857,
+                                              "Oceania": 0.2763420402090412,
+                                              "USA": 0.715756533214814
                                             },
-                                            "entropy": 0.6559154417766097,
+                                            "entropy": 0.6413920987529375,
                                             "value": "USA"
                                           }
                                         }
@@ -4280,22 +4272,22 @@
                                       "div": 8,
                                       "num_date": {
                                         "confidence": [
-                                          2020.1964030966922,
+                                          2020.1978949590375,
                                           2020.2117486338798
                                         ],
-                                        "value": 2020.2117486338798
+                                        "value": 2020.210183243975
                                       },
                                       "subclade_membership": {
                                         "value": "20C"
                                       },
                                       "country": {
                                         "confidence": {
-                                          "Canada": 0.002718599470126783,
-                                          "Europe": 0.0024404481886746926,
-                                          "Oceania": 0.08866311968079173,
-                                          "USA": 0.9051219797497669
+                                          "Canada": 0.002523712105267763,
+                                          "Europe": 0.0022780898726584057,
+                                          "Oceania": 0.08064318680452127,
+                                          "USA": 0.9135685626006896
                                         },
-                                        "entropy": 0.34302785025367244,
+                                        "entropy": 0.32140612589890655,
                                         "value": "USA"
                                       }
                                     }
@@ -4309,22 +4301,22 @@
                                   "div": 8,
                                   "num_date": {
                                     "confidence": [
-                                      2020.183794386331,
-                                      2020.2062319202
+                                      2020.1759088145375,
+                                      2020.206329017769
                                     ],
-                                    "value": 2020.2007418218072
+                                    "value": 2020.1924786511331
                                   },
                                   "subclade_membership": {
                                     "value": "20C"
                                   },
                                   "country": {
                                     "confidence": {
-                                      "Canada": 0.0058566738125379195,
-                                      "Europe": 0.0030774593016312433,
-                                      "Oceania": 0.05756698051662499,
-                                      "USA": 0.9323781199264073
+                                      "Canada": 0.005346435784532412,
+                                      "Europe": 0.00280636088192351,
+                                      "Oceania": 0.05175649825351962,
+                                      "USA": 0.9390674932263327
                                     },
-                                    "entropy": 0.285142205298015,
+                                    "entropy": 0.26380220479195204,
                                     "value": "USA"
                                   }
                                 }
@@ -4338,22 +4330,22 @@
                               "div": 8,
                               "num_date": {
                                 "confidence": [
-                                  2020.1752774965219,
-                                  2020.2039758855076
+                                  2020.1738940387424,
+                                  2020.2031776540746
                                 ],
-                                "value": 2020.1921371721753
+                                "value": 2020.1921573502195
                               },
                               "subclade_membership": {
                                 "value": "20C"
                               },
                               "country": {
                                 "confidence": {
-                                  "Canada": 0.0028430444096814583,
-                                  "Europe": 0.00475064519133145,
-                                  "Oceania": 0.03920063154589278,
-                                  "USA": 0.9521086065216872
+                                  "Canada": 0.0026043475613430982,
+                                  "Europe": 0.00437303217300912,
+                                  "Oceania": 0.038251484973838554,
+                                  "USA": 0.9537561327415597
                                 },
-                                "entropy": 0.2232576881034086,
+                                "entropy": 0.21624350716465204,
                                 "value": "USA"
                               }
                             }
@@ -4367,22 +4359,22 @@
                           "div": 8,
                           "num_date": {
                             "confidence": [
-                              2020.163479969053,
+                              2020.1674378868709,
                               2020.198087431694
                             ],
-                            "value": 2020.181220004752
+                            "value": 2020.1826215409271
                           },
                           "subclade_membership": {
                             "value": "20C"
                           },
                           "country": {
                             "confidence": {
-                              "Canada": 0.002963160792187677,
-                              "Europe": 0.017584728353441492,
-                              "Oceania": 0.02600346020248189,
-                              "USA": 0.9513594541150541
+                              "Canada": 0.0027353456798480387,
+                              "Europe": 0.016494838257649882,
+                              "Oceania": 0.023799730914079612,
+                              "USA": 0.9550344687323674
                             },
-                            "entropy": 0.2435356895189968,
+                            "entropy": 0.22884596095793558,
                             "value": "USA"
                           }
                         }
@@ -4396,22 +4388,22 @@
                       "div": 6,
                       "num_date": {
                         "confidence": [
-                          2020.1348779915572,
-                          2020.1734628228112
+                          2020.1349269760299,
+                          2020.1736929989634
                         ],
-                        "value": 2020.1580860919257
+                        "value": 2020.1586086878115
                       },
                       "subclade_membership": {
                         "value": "20C"
                       },
                       "country": {
                         "confidence": {
-                          "Asia": 0.009548069302598952,
-                          "Europe": 0.1205620253681226,
-                          "Oceania": 0.035012435674870925,
-                          "USA": 0.8281439791855885
+                          "Asia": 0.009088683114812975,
+                          "Europe": 0.11658263152705231,
+                          "Oceania": 0.03220075633176439,
+                          "USA": 0.835729114050084
                         },
-                        "entropy": 0.6066690460593303,
+                        "entropy": 0.586208524430393,
                         "value": "USA"
                       }
                     }
@@ -4425,22 +4417,22 @@
                   "div": 5,
                   "num_date": {
                     "confidence": [
-                      2020.105503341213,
+                      2020.1054703404295,
                       2020.15719767463
                     ],
-                    "value": 2020.15719767463
+                    "value": 2020.1566357983318
                   },
                   "subclade_membership": {
                     "value": "20A"
                   },
                   "country": {
                     "confidence": {
-                      "Asia": 0.046779960266393666,
-                      "Europe": 0.8191651998402731,
-                      "Oceania": 0.01257260507451015,
-                      "USA": 0.11635817504483831
+                      "Asia": 0.04611872726147215,
+                      "Europe": 0.8211545613743596,
+                      "Oceania": 0.012060532870566746,
+                      "USA": 0.11567549171991476
                     },
-                    "entropy": 0.6389927417598198,
+                    "entropy": 0.6329303854096837,
                     "value": "Europe"
                   }
                 }
@@ -4454,22 +4446,22 @@
               "div": 4,
               "num_date": {
                 "confidence": [
-                  2020.0621912979352,
-                  2020.1486183711052
+                  2020.064143618568,
+                  2020.1491213243294
                 ],
-                "value": 2020.1014262241079
+                "value": 2020.1027674189081
               },
               "subclade_membership": {
                 "value": "20A"
               },
               "country": {
                 "confidence": {
-                  "Asia": 0.13834780197308924,
-                  "Europe": 0.8107855974303886,
-                  "Oceania": 0.0072743278569128425,
-                  "USA": 0.03945114769835175
+                  "Asia": 0.13679896144640621,
+                  "Europe": 0.8131849001196191,
+                  "Oceania": 0.007107351166930646,
+                  "USA": 0.03886446481760565
                 },
-                "entropy": 0.6297827445986353,
+                "entropy": 0.6239529210340652,
                 "value": "Europe"
               }
             }
@@ -4483,7 +4475,7 @@
           "div": 3,
           "num_date": {
             "confidence": [
-              2020.0227951729921,
+              2020.0228747229069,
               2020.0642076502731
             ],
             "value": 2020.0642076502731
@@ -4493,12 +4485,12 @@
           },
           "country": {
             "confidence": {
-              "Asia": 0.9356496652041137,
-              "Europe": 0.05573360904531816,
-              "Oceania": 0.0017806222253505294,
-              "USA": 0.005332808771021266
+              "Asia": 0.9362574791135618,
+              "Europe": 0.055384820007787605,
+              "Oceania": 0.0017634222184206433,
+              "USA": 0.005125711812200565
             },
-            "entropy": 0.27210204060089765,
+            "entropy": 0.2697110574791042,
             "value": "Asia"
           }
         }
@@ -4512,20 +4504,20 @@
       "div": 0,
       "num_date": {
         "confidence": [
-          2019.9421428453848,
-          2019.9807663591657
+          2019.9423476634197,
+          2019.9808511508274
         ],
-        "value": 2019.962088066813
+        "value": 2019.96217597942
       },
       "subclade_membership": {
         "value": "19A"
       },
       "country": {
         "confidence": {
-          "Asia": 0.9948502482680033,
-          "Europe": 0.003926129844172371
+          "Asia": 0.994963303824676,
+          "Europe": 0.0038621150092925717
         },
-        "entropy": 0.03630767633517498,
+        "entropy": 0.03558260821393747,
         "value": "Asia"
       }
     }
