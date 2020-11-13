@@ -23,6 +23,12 @@ The endpoints for this build are `auspice/ncov_wh_background.json`, `auspice/nco
 
 This generates Figures 1 and 2 of the manuscript.
 
+This relies on collecting "adjacent" strains from global alignment by running:
+```
+python scripts/identify-matching-haplotypes.py --alignment ../ncov/results/aligned.fasta
+```
+and updating `default/include.txt` appropriately.
+
 ### Branch length distribution
 
 Overall statistics for branch length distributions are calculated in `branch-length-distribution`.

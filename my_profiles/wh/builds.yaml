@@ -32,7 +32,7 @@ builds:
   wh_lineage:
     subsampling_scheme: wh_lineage
     region: North America
-    title: "Genomic epidemiology of SARS-CoV-2"    
+    title: "Genomic epidemiology of SARS-CoV-2"
 
 subsampling:
 
@@ -74,3 +74,7 @@ subsampling:
 files:
   auspice_config: "my_profiles/wh/wh_auspice_config.json"
   description: "my_profiles/wh/wh_description.md"
+
+traits:
+  wh_lineage:
+    columns: ["division"]

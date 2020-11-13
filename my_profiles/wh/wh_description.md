@@ -1,1 +1,1 @@
-This is the description that appears below your visualization in Auspice. Edit me in `my_profiles/example/description.md`.
+This analysis is part of the manuscript [Viral genome sequencing places White House COVID-19 outbreak into phylogenetic context](https://doi.org/10.1101/2020.10.31.20223925).

@@ -10,6 +10,24 @@ rule download:
         aws s3 cp s3://nextstrain-ncov-private/sequences.fasta.gz - | gunzip -cq > {output.sequences:q}
         """
 
+rule update_strain_names:
+    message:
+        """
+        Replace strain names USA/DC-BBI... with WH... versions
+        """
+    input:
+        sequences = rules.download.output.sequences,
+        metadata = rules.download.output.metadata
+    output:
+        sequences = "results/sequences_adjusted.fasta",
+        metadata = "results/metadata_adjusted.tsv"
+    conda: config["conda_environment"]
+    shell:
+        """
+        sed 's/USA\/DC-BBI1\/2020/WH1/g; s/USA\/DC-BBI2\/2020/WH2/g' {input.sequences} > {output.sequences}
+        sed 's/USA\/DC-BBI1\/2020/WH1/g; s/USA\/DC-BBI2\/2020/WH2/g' {input.metadata} > {output.metadata}
+        """
+
 from datetime import date
 from treetime.utils import numeric_date
 
@@ -20,8 +38,8 @@ rule filter:
           - excluding strains in {input.exclude}
         """
     input:
-        sequences = rules.download.output.sequences,
-        metadata = rules.download.output.metadata,
+        sequences = rules.update_strain_names.output.sequences,
+        metadata = rules.update_strain_names.output.metadata,
         include = config["files"]["include"],
         exclude = config["files"]["exclude"]
     output:
@@ -122,7 +140,7 @@ rule subsample:
         """
     input:
         sequences = rules.filter.output.sequences,
-        metadata = rules.download.output.metadata,
+        metadata = rules.update_strain_names.output.metadata,
         include = config["files"]["include"]
     output:
         sequences = "results/{build_name}/sample-{subsample}.fasta"
@@ -188,7 +206,7 @@ rule adjust_metadata_regions:
         Adjusting metadata for build '{wildcards.build_name}'
         """
     input:
-        metadata = rules.download.output.metadata
+        metadata = rules.update_strain_names.output.metadata
     output:
         metadata = "results/{build_name}/metadata_adjusted.tsv"
     params:
@@ -321,7 +339,6 @@ rule refine:
         coalescent = config["refine"]["coalescent"],
         date_inference = config["refine"]["date_inference"],
         divergence_unit = config["refine"]["divergence_unit"],
-        clock_filter_iqd = config["refine"]["clock_filter_iqd"],
         keep_polytomies = "--keep-polytomies" if config["refine"].get("keep_polytomies", False) else "",
         timetree = "" if config["refine"].get("no_timetree", False) else "--timetree"
     conda: config["conda_environment"]
@@ -342,8 +359,7 @@ rule refine:
             --date-inference {params.date_inference} \
             --divergence-unit {params.divergence_unit} \
             --date-confidence \
-            --no-covariance \
-            --clock-filter-iqd {params.clock_filter_iqd} 2>&1 | tee {log}
+            --no-covariance | tee {log}
         """
 
 rule ancestral:
@@ -532,34 +548,6 @@ rule recency:
             --output {output} 2>&1 | tee {log}
         """
 
-rule tip_frequencies:
-    message: "Estimating censored KDE frequencies for tips"
-    input:
-        tree = rules.refine.output.tree,
-        metadata = _get_metadata_by_wildcards
-    output:
-        tip_frequencies_json = "results/{build_name}/tip-frequencies.json"
-    log:
-        "logs/tip_frequencies_{build_name}.txt"
-    params:
-        min_date = config["frequencies"]["min_date"],
-        pivot_interval = config["frequencies"]["pivot_interval"],
-        narrow_bandwidth = config["frequencies"]["narrow_bandwidth"],
-        proportion_wide = config["frequencies"]["proportion_wide"]
-    conda: config["conda_environment"]
-    shell:
-        """
-        augur frequencies \
-            --method kde \
-            --metadata {input.metadata} \
-            --tree {input.tree} \
-            --min-date {params.min_date} \
-            --pivot-interval {params.pivot_interval} \
-            --narrow-bandwidth {params.narrow_bandwidth} \
-            --proportion-wide {params.proportion_wide} \
-            --output {output.tip_frequencies_json} 2>&1 | tee {log}
-        """
-
 def export_title(wildcards):
     # TODO: maybe we could replace this with a config entry for full/human-readable build name?
     location_name = wildcards.build_name
@@ -656,13 +644,11 @@ rule incorporate_travel_history:
         """
 
 rule finalize:
-    message: "Remove extraneous colorings for main build and move frequencies"
+    message: "Remove extraneous colorings for main build"
     input:
-        auspice_json = rules.incorporate_travel_history.output.auspice_json,
-        frequencies = rules.tip_frequencies.output.tip_frequencies_json
+        auspice_json = rules.incorporate_travel_history.output.auspice_json
     output:
-        auspice_json = "auspice/ncov_{build_name}.json",
-        tip_frequency_json = "auspice/ncov_{build_name}_tip-frequencies.json"
+        auspice_json = "auspice/ncov_{build_name}.json"
     log:
         "logs/fix_colorings_{build_name}.txt"
     conda: config["conda_environment"]
@@ -670,6 +656,5 @@ rule finalize:
         """
         python3 scripts/fix-colorings.py \
             --input {input.auspice_json} \
-            --output {output.auspice_json} 2>&1 | tee {log} &&
-        cp {input.frequencies} {output.tip_frequency_json}
+            --output {output.auspice_json} 2>&1 | tee {log}
         """

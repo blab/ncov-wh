@@ -26,12 +26,7 @@ def get_todays_date():
 
 rule all_regions:
     input:
-        auspice_json = expand("auspice/ncov_{build_name}.json", build_name=BUILD_NAMES),
-        tip_frequencies_json = expand("auspice/ncov_{build_name}_tip-frequencies.json", build_name=BUILD_NAMES),
-        dated_auspice_json = expand("auspice/ncov_{build_name}_{date}.json", build_name=BUILD_NAMES, date=get_todays_date()),
-        dated_tip_frequencies_json = expand("auspice/ncov_{build_name}_{date}_tip-frequencies.json", build_name=BUILD_NAMES, date=get_todays_date()),
-        auspice_json_gisaid = expand("auspice/ncov_{build_name}_gisaid.json", build_name=BUILD_NAMES),
-        auspice_json_zh = expand("auspice/ncov_{build_name}_zh.json", build_name=BUILD_NAMES)
+        auspice_json = expand("auspice/ncov_{build_name}.json", build_name=BUILD_NAMES)
 
 # This cleans out files to allow re-run of 'normal' run (not ZH or GISAID)
 # with `export` to check lat-longs & orderings
@@ -222,21 +217,6 @@ rule fix_colorings_zh:
         python3 scripts/fix-colorings.py \
             --input {input.auspice_json} \
             --output {output.auspice_json} 2>&1 | tee {log}
-        """
-
-rule dated_json:
-    message: "Copying dated Auspice JSON"
-    input:
-        auspice_json = rules.finalize.output.auspice_json,
-        tip_frequencies_json = rules.tip_frequencies.output.tip_frequencies_json
-    output:
-        dated_auspice_json = "auspice/ncov_{build_name}_{date}.json",
-        dated_tip_frequencies_json = "auspice/ncov_{build_name}_{date}_tip-frequencies.json"
-    conda: config["conda_environment"]
-    shell:
-        """
-        cp {input.auspice_json} {output.dated_auspice_json}
-        cp {input.tip_frequencies_json} {output.dated_tip_frequencies_json}
         """
 
 #
