@@ -2,8 +2,7 @@
 Identify matching haplotypes
 """
 import argparse
-from Bio import AlignIO, SeqIO
-from Bio.Align import MultipleSeqAlignment
+from Bio import AlignIO
 
 if __name__ == "__main__":
 
@@ -23,13 +22,13 @@ if __name__ == "__main__":
     wt_expected = ['T', 'A']
 
     for i in range(0, len(positions)):
-        assert(ref[positions[i]-1]==ref_expected[i])
+        assert(ref[positions[i]-1].upper() == ref_expected[i])
 
     newwave_records = []
     for seq in aln:
         include = True
         for i in range(0, len(positions)):
-            if seq[positions[i]-1]!=wt_expected[i]:
+            if seq[positions[i]-1].upper() != wt_expected[i]:
                 include = False
         if include:
             newwave_records.append(seq)
